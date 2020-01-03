@@ -33,6 +33,8 @@ h2 {
   margin-bottom: 4px;
 }
 
+/* TODO: select one service and make it move -5 top in relation to its parent */
+
 nav {
   background: #373f51;
   padding: 16px 24px;
