@@ -35,7 +35,7 @@ header {
 
 .ft-sm {
   color: #567b958a;
-  margin-top: 0.5em;
+  margin-top: 2em;
   border-color: #567b958a;
   margin-bottom: 0.5em;
   border-width: 1px;
@@ -207,6 +207,7 @@ path {
 
 #logo-bar {
   display: flex;
+  align-items: center;
 }
 
 #links {
@@ -271,11 +272,28 @@ path {
   margin: 12px 0px;
 }
 
+#footer-end {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer-end span {
+  font-family: nyt-imperial, georgia, "times new roman", times, serif;
+  font-size: 11px;
+  padding: 0px 8px;
+  color: #333;
+  cursor: pointer;
+}
+
+#footer-end span:hover {
+  text-decoration: underline;
+}
+
 #logo-bar {
   display: flex;
   width: 70%;
   justify-content: space-between;
-  padding: 16px 3px;
+  padding: 2px 16px 16px 3px;
 }
 
 #logo-bar a {
