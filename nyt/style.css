@@ -301,3 +301,34 @@ path {
   font-size: 13px;
   text-decoration: none;
 }
+
+.login-icon {
+  display: inline;
+}
+
+@media screen and (max-width: 599px) {
+  .hd-item :nth-child(2) {
+    display: none;
+  }
+  .left-icon {
+    display: none;
+  }
+  .btn-white {
+    display: none;
+  }
+  .btn-blue {
+    display: none;
+  }
+  .login-icon {
+    display: inline;
+    text-align: end;
+    color: #333;
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .login-icon {
+    display: none;
+  }
+}
