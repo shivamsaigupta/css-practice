@@ -43,11 +43,11 @@ header {
 }
 
 .ft-full {
-  color: #567b958a;
+  color: #567b955e;
   margin-top: 0.5em;
-  border-color: #567b958a;
+  border-color: #567b955e;
   margin-bottom: 0.5em;
-  border-width: 1px;
+  border-width: 0.5px;
   width: 100%;
 }
 
@@ -229,6 +229,7 @@ path {
 #links ul {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 #links ul :first-child {
@@ -236,12 +237,20 @@ path {
   margin-bottom: 6px;
 }
 
+#subscribe {
+  border-left: 1px solid #567b955e;
+  padding-left: 8px;
+  justify-content: space-between;
+}
+
 .bold {
   font-weight: bold;
+  line-height: 2em;
 }
 
 .tiny {
   font-size: 8px;
+  line-height: 2em;
 }
 
 .tiny :first-child {
