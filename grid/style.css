@@ -17,7 +17,7 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 999;
 }
 
 li {
@@ -38,10 +38,11 @@ li {
     rgba(167, 172, 185, 0.479)
   );
   border: 1px solid #58595e;
-  transition: transform 1s, border 1s;
+  transition: transform 1s, border 1s, color 0.25s;
 }
 
 li:hover {
+  color: white;
   font-weight: 800px;
   transform: scale(1.05);
   border: 2px solid #90929b;
@@ -98,6 +99,10 @@ img {
   min-height: 150px;
 }
 
+.service:hover {
+  background-color: #777f9480;
+}
+
 .service h2 {
   margin: 11px 16px;
   font-size: 1.5rem;
@@ -120,6 +125,10 @@ img {
   background-color: #686f8280;
   color: white;
   box-shadow: rgba(88, 88, 88, 0.342);
+}
+
+.about:hover {
+  background-color: #777f9480;
 }
 
 .about p {
