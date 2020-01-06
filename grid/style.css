@@ -4,6 +4,7 @@
 
 body {
   font-family: "Open Sans", Helvetica, sans-serif;
+  background-color: #999;
 }
 
 ul {
@@ -43,7 +44,7 @@ li:hover {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 6rem;
   position: absolute;
   flex: 1;
   align-self: center;
@@ -80,36 +81,52 @@ img {
 }
 
 .services {
+  margin: 8px 16px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .service {
-  margin: 8px;
-  padding: 4px;
-  background-color: #9cfffa;
+  background-color: #515a70;
+  color: white;
+  padding: 8px 8px 0px 0px;
+  text-align: justify;
   min-height: 150px;
 }
 
+.service h2 {
+  margin: 11px 16px;
+  font-size: 1.5rem;
+}
+
 .service p {
-  margin: 3px;
+  margin: 8px 16px;
 }
 
 .gallery {
   display: grid;
   margin: 8px 8px 16px 16px;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  position: relative;
 }
 
 .about {
   margin: 8px 16px;
-  background-color: white;
+  padding: 8px 8px 0px 0px;
+  background-color: #686f82;
+  color: white;
   box-shadow: rgba(88, 88, 88, 0.342);
 }
 
 .about p {
+  margin: 8px 16px;
   padding-top: 8px;
   columns: 2;
+}
+
+.about h2 {
+  margin: 8px 16px;
+  font-size: 3rem;
 }
 
 .footer {
@@ -118,4 +135,24 @@ img {
   line-height: normal;
   color: #999;
   padding: 1rem;
+}
+
+.gallery-text {
+  color: white;
+  position: absolute;
+  z-index: 3;
+  margin: 8px 16px;
+}
+
+.gallery-text h2 {
+  font-size: 3rem;
+}
+
+.gallery img {
+  z-index: 2;
+  transition: transform 0.5s;
+}
+.gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(88, 88, 88, 0.342);
 }
